@@ -51,7 +51,7 @@ def run(server_socket, server_port):
 
         
 
-        # Start a new thread to handle this client
+        # Start a new thread to handle the client
         client_thread = threading.Thread(target=handle_client, args=(client_socket, address))
         client_thread.start()
 
